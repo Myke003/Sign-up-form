@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    background-color: #ffff;
+    display: flex;
+    font-family:'Roboto', sans-serif;
+}
+
+/* lado izquierdo */
+.imagen_fondo{
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen_fondo .logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+}
+
+.logo img{
+    display: flex;
+    align-items: center;
+    height: 150px;
+}
+
+.logo h2{
+    font-weight: bold;
+    font-size: 100px;
+    color: white;
+    font-family: 'Norse';
+}
+
+/* lado derecho */
+
+.principal{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(250, 247, 247);
+}
+
+.text, .formulario{
+    margin: 20px;
+}
+
+.text{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 2em;
+}
+
+.formulario form{
+    background: white;
+    height: 250px;
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    grid-template-rows: repeat(3, 0.5fr);
+    gap: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+
+.inputs input{
+    width: 250px;
+    height: 2.5em;
+    border: 1px solid  #E5E7EB;
+    border-radius: 0.2rem;
+    font-size: 15px;
+}
+
+.boton{
+    padding: 40px 10px;
+}
+
+.boton button{
+    background-color: #596D48;
+    border: none;
+    border-radius: 6px;
+    height: 40px;
+    width: 200px;
+    font-size: 15px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.boton button:hover{
+    background-color: #688351;
+    transition: 160ms;
+}
+
+.boton p{
+    margin-top: 2rem;
+}
+
+.boton p a{
+    text-decoration: none;
+    color: #596D48;
+    font-weight: bold;
+}
